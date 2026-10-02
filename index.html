@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09090b">
+    <meta name="description" content="Portfólio de Gustavo Rodrigues: desenvolvimento de software, interfaces e cibersegurança.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https://images.unsplash.com; connect-src 'none'; frame-src 'none'; media-src 'none'; worker-src 'none'; manifest-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+    <title>Gustavo Rodrigues | Portfólio</title>
+    <link rel="icon" type="image/jpeg" href="img/icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="ambient-gradient" aria-hidden="true"></div>
+    <aside class="side-dock" aria-label="Navegação principal">
+        <nav class="dock-nav">
+            <a class="dock-link is-active" href="#inicio" aria-label="Início" title="Início">
+                <i class="fa-solid fa-house"></i><span>Início</span>
+            </a>
+            <a class="dock-link" href="#trabalho" aria-label="Trabalho" title="Trabalho">
+                <i class="fa-solid fa-code"></i><span>Trabalho</span>
+            </a>
+            <a class="dock-link" href="#projetos" aria-label="Projetos" title="Projetos">
+                <i class="fa-regular fa-folder-open"></i><span>Projetos</span>
+            </a>
+            <a class="dock-link" href="#educacao" aria-label="Educação" title="Educação">
+                <i class="fa-solid fa-graduation-cap"></i><span>Educação</span>
+            </a>
+            <a class="dock-link" href="#contato" aria-label="Contato" title="Contato">
+                <i class="fa-regular fa-paper-plane"></i><span>Contato</span>
+            </a>
+        </nav>
+        <span class="dock-divider" aria-hidden="true"></span>
+        <button class="dock-link theme-toggle" id="theme-toggle" type="button" aria-label="Ativar tema claro" title="Alternar tema">
+            <i class="fa-regular fa-moon"></i><span>Tema</span>
+        </button>
+    </aside>
+
+    <header class="site-header">
+        <a class="wordmark" href="#inicio" aria-label="Voltar ao início" title="Voltar ao início">
+            <img src="img/icon.jpg" alt="Ícone do site">
+        </a>
+        <div class="site-search" role="search" aria-label="Buscar no portfólio">
+            <input id="project-search" type="search" placeholder="Buscar projetos ou seções" aria-label="Buscar projetos ou seções" aria-controls="projects-grid project-search-empty" autocomplete="off">
+            <button id="project-search-submit" type="button" aria-label="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+        </div>
+        <nav class="site-nav" aria-label="Navegação do site">
+            <a class="is-active" href="#inicio">Início</a>
+            <a href="#trabalho">Trabalho</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#educacao">Educação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> Conheça-me </p>
+                <h1 id="hero-title">Tecnologia com propósito.<br><span>Segurança desde o início.</span></h1>
+                <p class="hero-description">Sou Gustavo, estudante de Engenharia de Software interessado em criar produtos digitais úteis, acessíveis e seguros.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projetos">Explorar projetos <i class="fa-solid fa-arrow-right"></i></a>
+                    <a class="button button-quiet" href="#contato">Vamos conversar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="hero-footnote">
+                    <span class="status-dot"></span>
+                    Engenheiro de Software <span class="footnote-separator">/</span> Cibersegurança
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-frame">
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+                        alt="Detalhe de uma placa eletrônica com circuitos e componentes"
+                        fetchpriority="high"
+                    >
+                    <div class="visual-shade"></div>
+                    <div class="visual-caption"><strong>Software pensado<br>para pessoas.</strong></div>
+                </div>
+                <div class="visual-coordinate">CONSTRUINDO O FUTURO</div>
+                <div class="visual-accent" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <section class="work-section section-shell" id="trabalho" aria-labelledby="work-title">
+            <div class="section-index">01 <span>/</span> TRABALHO</div>
+            <div class="work-content">
+                <h2 id="work-title">Áreas em que quero <span>contribuir.</span></h2>
+                <p> Engenheiro de Software, segurança da informação e experiências digitais acessíveis: áreas que conecto para criar soluções úteis e cuidadosas.</p>
+            </div>
+            <div class="focus-list" aria-label="Áreas de atuação">
+                    <div>
+                        <span>01</span><strong>Engenheiro de Software</strong>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                    <div>
+                        <span>02</span><strong>Segurança da informação</strong>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                    <div>
+                        <span>03</span><strong>Experiência de usuário</strong>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+            </div>
+        </section>
+
+        <section class="projects-section section-shell" id="projetos" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <div><p class="section-index">02 <span>/</span> PROJETOS </p><h2 id="projects-title">Projetos em destaque<span class="accent-dot">.</span></h2></div>
+                <p>Ideias e interfaces que exploram tecnologia, clareza e impacto.</p>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <article
+                    class="project-card project-card-featured"
+                    tabindex="0"
+                    role="button"
+                    aria-haspopup="dialog"
+                    aria-controls="project-dialog"
+                    aria-label="Ver detalhes do projeto: Painel de análise de ameaças"
+                    data-project-description="Conceito de painel para centralizar alertas de segurança, visualizar tendências e acompanhar incidentes. A proposta prioriza hierarquia visual, leitura rápida de indicadores e navegação por categorias, sem apresentar dados de incidentes reais."
+                >
+                    <div class="project-art threat-art" aria-label="Prévia de um painel de análise de segurança">
+                        <div class="art-toolbar">
+                            <span class="art-brand"><i class="fa-solid fa-shield-halved"></i> SENTINEL</span>
+                            <span class="art-live"><i class="fa-solid fa-circle"></i> SISTEMA ATIVO</span>
+                        </div>
+                        <div class="art-body">
+                            <div class="art-sidebar">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <i class="fa-solid fa-bug"></i>
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="art-content">
+                                <span>VISÃO GERAL</span>
+                                <div class="art-chart">
+                                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                                <div class="art-rows"><i></i><i></i><i></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span>01 — SEGURANÇA</span>
+                            <span>CONCEITO DE INTERFACE</span>
+                        </div>
+                        <h3>Painel de análise de ameaças</h3>
+                        <p>Uma interface para organizar alertas e tornar informações de segurança mais fáceis de acompanhar.</p>
+                        <div class="tag-list"><span>UI Design</span><span>JavaScript</span><span>Segurança</span></div>
+                    </div>
+                </article>
+                <article
+                    class="project-card"
+                    tabindex="0"
+                    role="button"
+                    aria-haspopup="dialog"
+                    aria-controls="project-dialog"
+                    aria-label="Ver detalhes do projeto: Plataforma de aprendizagem"
+                    data-project-description="Conceito de uma experiência de aprendizagem com conteúdos organizados em trilhas, acompanhamento de progresso e navegação acessível. O projeto explora uma interface responsiva para ajudar estudantes a encontrar conteúdos e acompanhar sua evolução."
+                >
+                    <div class="project-art learning-art" aria-label="Prévia de uma plataforma de aprendizagem online">
+                        <div class="learning-top">
+                            <span>aprende<span class="accent-dot">.</span></span>
+                            <span><i class="fa-solid fa-bars"></i></span>
+                        </div>
+                        <div class="learning-body">
+                            <div class="learning-kicker">TRILHA DE APRENDIZADO</div>
+                            <strong>Aprenda no<br>seu ritmo.</strong>
+                            <div class="learning-progress"><span></span></div>
+                            <div class="learning-labels"><span>Seu progresso</span><b>68%</b></div>
+                            <div class="learning-play"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span>02 — EDUCAÇÃO</span>
+                            <span>CONCEITO DE INTERFACE</span>
+                        </div>
+                        <h3>Plataforma de aprendizagem</h3>
+                        <p>Uma experiência de estudo com navegação simples, conteúdo organizado e foco na acessibilidade.</p>
+                        <div class="tag-list"><span>Front-end</span><span>Responsivo</span><span>Acessibilidade</span></div>
+                    </div>
+                </article>
+                <article
+                    class="project-card project-card-placeholder"
+                    tabindex="0"
+                    role="button"
+                    aria-haspopup="dialog"
+                    aria-controls="project-dialog"
+                    aria-label="Ver detalhes do projeto: Estoque omnichannel"
+                    data-project-description="Eu e minha equipe, a WedTech, composta por Matheus Ferreira , Julia Morales , Thiago Welington, Jaaziel Fernandes, Marcos Rubens, Ismael Piva, Deyvson Lucas e Mateus Martins Santos tivemos a oportunidade de participar do hackathon promovido pela WecTI na Unicid.
+
+Foram 3 dias de maratona de desenvolvimento, com o objetivo de criar, usando tecnologia e inovação, uma solução prática para um problema real do mercado.
+
+Nosso desafio foi desenvolver um software que centraliza a conexão entre diversos marketplaces em um único lugar, permitindo controlar estoque, cadastrar produtos e gerenciar outras funcionalidades de forma integrada, sem precisar alternar entre várias plataformas.
+
+Foram dias intensos de concentração e evolução, nos quais tivemos que trabalhar em equipe, dividir tarefas e tomar decisões rápidas. Aprendemos muito com os outros grupos e com os mentores.
+
+Levamos para casa uma bagagem nova de habilidades e a confiança de que boas ideias, aliadas à tecnologia, podem resolver problemas reais."
+                >
+                    <div class="project-art project-placeholder-art">
+                        <img src="img/icon4.jpg" alt="Captura do projeto Estoque omnichannel">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta"><span>03 — WedTech</span><span>Integração de sistemas</span></div>
+                        <h3>Estoque omnichannel</h3>
+                        <p>Software que centraliza a conexão entre diversos marketplaces em um único lugar, permitindo controlar estoque, cadastrar produtos e gerenciar outras funcionalidades de forma integrada.</p>
+                        <div class="tag-list"><span>JavaScript</span><span>PHP</span><span>Python</span><span>HTML5</span><span>CSS3</span><span>SQLite</span></div>
+                    </div>
+                </article>
+            </div>
+            <p class="search-empty" id="project-search-empty" role="status" hidden>Nenhum projeto encontrado.</p>
+        </section>
+
+        <section class="education-section section-shell" id="educacao" aria-labelledby="education-title">
+            <div class="section-index">03 <span>/</span> EDUCAÇÃO</div>
+            <div class="education-details">
+                <div class="education-content">
+                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                    <div>
+                        <h2 id="education-title">Engenharia de Software</h2>
+                        <p>Estudante, desenvolvendo conhecimentos em tecnologia e criação de produtos digitais.</p>
+                    </div>
+                    <span class="education-status">EM FORMAÇÃO</span>
+                </div>
+                <div class="education-topics">
+                    <section class="education-topic" aria-labelledby="courses-title">
+                        <h3 id="courses-title"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Cursos</h3>
+                        <div class="education-entry">
+                            <strong>Cybersecurity fundamentals</strong>
+                            <span> Cybersecurity · FIAP NANO COURSES · 2026</span>
+                        </div>
+                    </section>
+                    <section class="education-topic" aria-labelledby="certifications-title">
+                        <h3 id="certifications-title"><i class="fa-solid fa-award" aria-hidden="true"></i> Certificações</h3>
+                        <div class="education-entry">
+                            <strong> Gemini Academy</strong>
+                            <span>Gemini fundamentals · Google · 2025</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-shell" id="contato" aria-labelledby="contact-title">
+            <div class="section-index">04 <span>/</span> CONTATO </div>
+            <div class="contact-content">
+                <p class="eyebrow"><span class="eyebrow-line"></span> TEM UM PROJETO EM MENTE?</p>
+                <h2 id="contact-title">Boas ideias começam<br>com uma conversa<span class="accent-dot">.</span></h2>
+                <a class="button button-primary" href="#contato">
+                    Entre em contato <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="contact-side">
+                <span class="status-dot"></span>
+                <p>Disponível para conversar sobre oportunidades, projetos e colaboração.</p>
+                <span class="contact-caption">SÃO PAULO, BRASIL · 2026</span>
+            </div>
+        </section>
+
+        <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title">
+            <div class="contact-dialog-heading">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-line"></span> CONTATO</p>
+                    <h2 id="contact-dialog-title">Vamos conversar.</h2>
+                </div>
+                <button class="dialog-close" type="button" aria-label="Fechar contatos" autofocus>
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:gdr3454596@gmail.com">
+                    <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                    <span><strong>E-mail</strong><small>Enviar mensagem</small></span>
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gustavorodrigues-swe" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    <span><strong>LinkedIn</strong><small>Abrir perfil</small></span>
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/IamgustS" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span><strong>GitHub</strong><small>Abrir perfil</small></span>
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/iamgustll/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <span><strong>Instagram</strong><small>Abrir perfil</small></span>
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+            </div>
+        </dialog>
+
+        <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title" aria-describedby="project-dialog-description">
+            <div class="project-dialog-heading">
+                <div>
+                    <p class="project-dialog-category" id="project-dialog-category"></p>
+                    <h2 id="project-dialog-title"></h2>
+                </div>
+                <button class="dialog-close" id="project-dialog-close" type="button" aria-label="Fechar detalhes do projeto" autofocus>
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+            <p class="project-dialog-description" id="project-dialog-description"></p>
+            <div class="tag-list" id="project-dialog-tags" aria-label="Tecnologias e temas"></div>
+        </dialog>
+
+        <footer class="site-footer section-shell">
+            <a class="footer-mark" href="#inicio">©copyright<span>.</span></a>
+            <p>Feito por Gustavo Rodrigues.</p>
+            <a href="#inicio" class="back-top">
+                VOLTAR AO TOPO <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </footer>
+    </main>
+    <script src="Main.js" defer></script>
+</body>
+</html>
